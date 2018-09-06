@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Knewave|Merienda" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Fast-Food-Fast</title>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<style>
+  #top
+  {
+    background: #DC143C;
+    font-family: 'Merienda', cursive;
+    height: 80px;
+    display: flex;
+    /*Aligns the contents to the centre vertically*/
+    align-items: center;
+    /*Aligns the contents to the centre horizontally*/
+    justify-content: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  body{padding: 0;margin: 0;}
+  ul{
+    list-style:none;
+  }
+  li{
+    display: inline-block;
+    /*Includes a space in between the margins*/
+    margin-right: 10px;
+  }
+  /*It changes the color when one hovers the cursor   */
+  #top a:hover{color: #7116b4;
+    border-bottom: 1px solid gray;
+  }
+  #top a{
+    text-decoration: none;
+    color: #a2f0ed;
+    font-size: 1.5em;
+  }
+  /*CSS Styles for the Home section*/
+  /*Styles for all sections*/
+  /*this is the class selector*/
+  .mine{
+    height: 100vh;
+    display: flex;
+    /*Aligns the contents to the centre vertically*/
+    align-items: center;
+    /*Aligns the contents to the centre horizontally*/
+    justify-content: center;
+  }
+  #home{
+    background:url("images/bg.jpg") #801a05;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    color: #0c0920;
+  }
+  /*When targetting many things use class otherwise use ID*/
+  .mine h2,p{
+    font-family: 'Knewave', cursive;
+    text-align: center;
+  }
+  #products
+  {
+	background-size: cover;
+    background-position: right;
+    color: #0c0920;
+	width: 100%
+	}
+  #products .item{
+    width: 100%;
+    background: rgba(12, 9, 32, 0.5);
+    padding-top:3%;
+    padding-bottom: 2%;
+  }
+  #products img{
+    width: 98%;
+  }
+  #products h2,p{
+    margin: 0;
+  }
+  #products h2{
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+  }
+  #products .item:hover{
+    background: #ffffff;
+    color: #701c1c;
+    transition: background 3s, color 4s;
+  }
+  @keyframes example {
+    from {background-color: darkgray;}
+    to {background-color: mediumblue;}
+  }
+  #top a:hover{
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  .formdiv{
+    width: 30%;
+    border: 1px solid;
+    padding: 20px;
+  }
+  .formdiv input,textarea,button{
+    width: 100%;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+  }
+  .formdiv input,button{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+  }
+  .formdiv button{
+    background: rgba(29, 6, 53, 0.37);
+    color: #0f0318;
+    border: 1px solid;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  .boxes{
+    border: 1px #0f0318 solid;
+    width: 48%;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #0f0318;
+  }
+  .boxes p {
+    text-align: justify;
+  }
+  .boxes h3{
+    text-align: center;}
+
+   table {
+     font-family: arial, sans-serif;
+     width: 100%;
+     border-collapse: collapse;
+   }
+
+  td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+  }
+  th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 25px;25px;25px;25px;
+    background-color: #DC143C;
+    width :5%
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 2px 2px;
+      cursor: pointer;
+  }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+   background: #DC143C;
+   font-family: 'Merienda', cursive;
+   height: 70px;
+}
+
+  .button1 {background-color: #4CAF50;} /* Green */
+  .button2 {background-color: #f44336;} /* Red */
+  .button3 {background-color: #008CBA;  /* Blue */
+  .button4 {background-color: #555555;} /* Black */
+
+  /*<link rel="stylesheet" href="mycss.css">*/
+  .content{
+        col-sm-4:col-xs-12}
+</style>
+<body>
+<div id="top">
+  <ul>
+    <li>
+      <a data-scroll   href="#home">Home</a>
+    </li>
+    <li>
+      <a data-scroll  href="#products">Our Menu</a>  |
+    </li>
+    <li>
+      <a data-scroll  href="#contact">Order History</a> |
+    </li>
+    <li>
+      <a  data-scroll  href="#home">Log Out</a>
+    </li>
+  </ul>
+</div>
+<!--Home section-->
+<div id="home" class="mine">
+  <div>
+    <div class="container">
+      <div class="boxes">
+        <h2>Welcome to Fast-Food-Fast.</h2>
+    <p>A Fast food delivery service app for our restaurant</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Aut doloribus exercitationem expedita fugiat id illum
+      impedit in molestias non optio pariatur quaerat quas,
+      repellendus veritatis voluptates? Corporis non velit veniam.
+    </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="products" class="mine">
+  <div class="item">
+    <img src="images/pizza.jpg" alt="">
+    <h2>Large Pizza</h2>
+    <p>20$
+      <button>Add To Cart</button>
+    </p>
+  </div>
+  <div class="item">
+    <img src="images/pizza.jpg" alt="">
+    <h2>Medium Pizza</h2>
+    <p>10$
+      <button>Add To Cart</button>
+    </p>
+  </div>
+  <div class="item">
+    <img src="images/goko.jpg" alt="">
+    <h2>Drum Sticks</h2>
+    <p>5$
+      <button>Add To Cart</button>
+    </p>
+  </div>
+  <div class="item">
+    <img src="images/chipo.jpg" alt="">
+    <h2>Hot dog and chips</h2>
+    <p>5$
+      <button>Add To Cart</button>
+    </p>
+  </div>
+    <div class="item">
+        <img src="images/sausage.jpg" alt="">
+        <h2>Hotdog</h2>
+        <p>5$
+            <button>Add To Cart</button>
+        </p>
+    </div>
+</div>
+<div id="contact">
+<h2>Orders Placed</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Order(s)</th>
+	<th>Price</th>
+    <th>Date Ordered</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+	<td>Pizza</td>
+    <td>20</td>
+	<td>10$</td>
+    <td>04/09/2018</td>
+    <td><button class="button button2">Delete Order</button></td>
+  </tr>
+  <tr>
+    <td>Pizza</td>
+    <td>30</td>
+	<td>10$</td>
+    <td>06/07/2018</td>
+	<td><button class="button button2">Delete Order</button></td>
+  </tr>
+  <tr>
+	<td>Pizza</td>
+    <td>1</td>
+	<td>10$</td>
+    <td>5/04/2018</td>
+    <td><button class="button button2">Delete Order</button></td>
+  </tr>
+  <tr>
+	<td>Pizza</td>
+    <td>4</td>
+	<td>10$</td>
+    <td>01/09/2018</td>
+    <td><button class="button button2">Delete Order</button></td>
+  </tr>
+  <tr>
+  <td>Pizza</td>
+    <td>3</td>
+	<td>10$</td>
+    <td>12/08/2018</td>
+    <td><button class="button button2">Delete Order</button></td>
+  </tr>
+  <tr>
+    <td>Pizza</td>
+    <td>1</td>
+	<td>10$</td>
+    <td>30/04/2018</td>
+	<td><button class="button button2">Delete Order</button></td>
+  </tr>
+  <tr>
+    <td>Pizza</td>
+    <td>2</td>
+	<td>10$</td>
+    <td>12/03/2018</td>
+	<td><button class="button button2">Delete Order</button></td>
+  </tr>
+  <tr>
+    <td>Pizza</td>
+    <td>6</td>
+	<td>10$</td>
+    <td>02/01/2018</td>
+	<td><button class="button button2">Delete Order</button></td>
+  </tr>
+  <tr>
+	<td>Pizza</td>
+    <td>5</td>
+	<td>10$</td>
+    <td>01/01/2018</td>
+    <td><button class="button button2">Delete Order</button></td>
+    
+  </tr>
+</table>
+</div	>
+<div class="footer">
+  <a href="www.facebook.com">Facebook</a>
+  <a href="www.twitter.com">Twitter</a>
+  <a href="www.instagram.com">Instagram</a>
+</div>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+</body>
+</html>
