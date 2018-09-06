@@ -6,4 +6,6 @@ my mockup account is https://app.moqups.com/emmahg6@gmail.com/WA9HKiyyQ7/view
 To use this application clone it in your desktop and run the files separately i.e loginform.html and orders.html
 The link below shows my pivotal tracker account:
 https://www.pivotaltracker.com/projects/2195111
-thank you
+<img src="images/login_form.jpg" alt=""/>
+<img src="images/homepage.jpg" alt=""/>
+<img src="images/admin_panel.jpg" alt=""/>
