@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Knewave|Merienda" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<style>
+#home{
+    background:url("images/bg.jpg") #801a05;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    color: #0c0920;
+  }
+  .mine{
+    height: 100vh;
+    display: flex;
+    /*Aligns the contents to the centre vertically*/
+    align-items: center;
+    /*Aligns the contents to the centre horizontally*/
+    justify-content: center;
+  }
+  .boxes{
+    border: 1px #0f0318 solid;
+    width: 48%;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #0f0318;
+  }
+    body{padding: 0;margin: 0;}
+    #top
+    {
+        background: #DC143C;
+        font-family: 'Merienda', cursive;
+        height: 80px;
+        display: flex;
+        /*Aligns the contents to the centre vertically*/
+        align-items: center;
+        /*Aligns the contents to the centre horizontally*/
+        justify-content: left;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    #top a{
+        text-decoration: none;
+        color: #a2f0ed;
+        font-size: 1.5em;
+    }
+
+    #top a:hover{color: #7116b4;
+        border-bottom: 1px solid gray;
+    }
+    ul{
+        list-style:none;
+    }
+    li{
+        display: inline-block;
+        /*Includes a space in between the margins*/
+        margin-right: 10px;
+    }
+table {
+    font-family: arial, sans-serif;
+	width: 100%;
+    border-collapse: collapse;
+    margin-top: 5%;
+
+}
+
+td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+    border-top: 10%;
+}
+th{
+	border: 1px solid #dddddd;
+    text-align: left;
+    padding: 25px;25px;25px;25px;
+	background-color: #DC143C;
+	width :5%
+	}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   color: white;
+   background: #DC143C;
+   font-family: 'Merienda', cursive;
+   height: 70px;
+}
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #f44336;} /* Red */
+.button3 {background-color: #008CBA;  /* Blue */
+.button4 {background-color: #555555;} /* Black */
+</style>
+</head>
+<body>
+<div id="home" class="mine">
+  <div>
+    <div class="container">
+      <div class="boxes">
+        <h2>Welcome to Fast-Food-Fast.</h2>
+    <p>A Fast food delivery service app for our restaurant</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Aut doloribus exercitationem expedita fugiat id illum
+      impedit in molestias non optio pariatur quaerat quas,
+      repellendus veritatis voluptates? Corporis non velit veniam.
+    </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="top">
+    <ul>
+		<li>
+            <a data-scroll  href="#home">Home</a> |
+        </li>
+        <li>
+            <a data-scroll  href="#table">View Orders</a> |
+        </li>
+        <li>
+            <a  data-scroll  href="#home">Log Out</a>
+        </li>
+    </ul>
+</div>
+<div id="table">
+<h2>Orders Placed</h2>
+</div>
+<div>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Order(s)</th>
+    <th>Contact</th>
+	<th>Edit Order(s)</th>
+  </tr>
+  <tr>
+    <td>Emmanuel Muchiri</td>
+    <td>Pizza</td>
+    <td>0706915605</td>
+	<td>
+	<button class="button button1">Add Order</button>
+	|<button class="button button2">Decline Order</button>
+        |<button class="button button3">Mark As Completed</button>
+  </tr>
+  <tr>
+    <td>Emmanuel Muchiri</td>
+    <td>Pizza</td>
+    <td>0706915605</td>
+	<td>
+	<button class="button button1">Add Order</button>
+	|<button class="button button2">Decline Order</button>
+        |<button class="button button3">Mark As Completed</button>
+  </tr>
+  </tr>
+  <tr>
+    <td>Emmanuel Muchiri</td>
+    <td>Pizza</td>
+    <td>0706915605</td>
+	<td>
+	<button class="button button1">Add Order</button>
+	|<button class="button button2">Decline Order</button>
+        |<button class="button button3">Mark As Completed</button>
+  </tr>
+  </tr>
+  <tr>
+    <td>Emmanuel Muchiri</td>
+    <td>Pizza</td>
+    <td>0706915605</td>
+	<td>
+	<button class="button button1">Add Order</button>
+	|<button class="button button2">Decline Order</button>
+        |<button class="button button3">Mark As Completed</button>
+  </tr>
+  </tr>
+  <tr>
+    <td>Emmanuel Muchiri</td>
+    <td>Pizza</td>
+    <td>0706915605</td>
+	<td>
+	<button class="button button1">Add Order</button>
+	|<button class="button button2">Decline Order</button>
+        |<button class="button button3">Mark As Completed</button>
+  </tr>
+  </tr>
+  <tr>
+   <td>Emmanuel Muchiri</td>
+    <td>Pizza</td>
+    <td>0706915605</td>
+	<td>
+	<button class="button button1">Add Order</button>
+	|<button class="button button2">Decline Order</button>
+        |<button class="button button3">Mark As Completed</button>
+  </tr>
+  <tr>
+   <td>Emmanuel Muchiri</td>
+    <td>Pizza</td>
+    <td>0706915605</td>
+	<td>
+	<button class="button button1">Add Order</button>
+	|<button class="button button2">Decline Order</button>
+        |<button class="button button3">Mark As Completed</button>
+  </tr>
+  <tr>
+   <td>Emmanuel Muchiri</td>
+    <td>Pizza</td>
+    <td>0706915605</td>
+	<td>
+	<button class="button button1">Add Order</button>
+	|<button class="button button2">Decline Order</button>
+        |<button class="button button3">Mark As Completed</button>
+  </tr>
+  <tr>
+   <td>Emmanuel Muchiri</td>
+    <td>Pizza</td>
+    <td>0706915605</td>
+	<td>
+	<button class="button button1">Add Order</button>
+	|<button class="button button2">Decline Order</button>
+        |<button class="button button3">Mark As Completed</button>
+  </tr>
+</table>
+</div>
+<div class="footer">
+  <a href="www.facebook.com">Facebook</a>
+  <a href="www.twitter.com">Twitter</a>
+  <a href="www.instagram.com">Instagram</a>
+</div>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+</body>
+</html>
