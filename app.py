@@ -8,15 +8,15 @@ api = Api(app)
 orders = [
     {
         'id': 1,
-        'name':'eat'
+        'name':'Pizza'
     },
     {
         'id': 2,
-        'name':'code'
+        'name':'Burger'
     },
     {
         'id': 3,
-        'name': 'sleep'
+        'name': 'Kebab'
     }
 ]
 
@@ -70,6 +70,5 @@ class OrdersList(Resource):
         
 api.add_resource(Orders ,'/api/v1/orders/')
 api.add_resource(OrdersList, '/api/v1/orders/<int:id>')
-
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
